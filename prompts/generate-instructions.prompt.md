@@ -2,7 +2,7 @@
 title: Generate Custom Instructions for AI Coding Agents
 ---
 
-Analyze this codebase to generate or update `.pim/custom-instructions.md` for guiding AI coding agents.
+Analyze this codebase to generate or update `.pim/generated-instructions.md` for guiding AI coding agents.
 
 Focus on discovering the essential knowledge that would help an AI agents be immediately productive in this codebase.
 Consider aspects like:
@@ -15,12 +15,12 @@ Consider aspects like:
 - Integration points, external dependencies, and cross-component communication patterns
 
 Source existing AI conventions from
-`**/{.pim/custom-instructions.md,AGENT.md,AGENTS.md,CLAUDE.md,.cursorrules,.windsurfrules,.clinerules,.cursor/rules/**,.windsurf/rules/**,.clinerules/**,README.md}` (
+`**/{.pim/generated-instructions.md,AGENT.md,AGENTS.md,CLAUDE.md,.cursorrules,.windsurfrules,.clinerules,.cursor/rules/**,.windsurf/rules/**,.clinerules/**,README.md}` (
 do one glob search).
 
 Guidelines (read more at https://aka.ms/vscode-instructions-docs):
 
-- If `.pim/custom-instructions.md` exists, merge intelligently - preserve valuable content while updating outdated
+- If `.pim/generated-instructions.md` exists, merge intelligently - preserve valuable content while updating outdated
   sections
 - Write concise, actionable instructions (~20-50 lines) using markdown structure
 - Include specific examples from the codebase when describing patterns
@@ -28,5 +28,5 @@ Guidelines (read more at https://aka.ms/vscode-instructions-docs):
 - Document only discoverable patterns, not aspirational practices
 - Reference key files/directories that exemplify important patterns
 
-Update `.pim/custom-instructions.md` for the user, then ask for feedback on any unclear or incomplete sections to
+Update `.pim/generated-instructions.md` for the user, then ask for feedback on any unclear or incomplete sections to
 iterate.
